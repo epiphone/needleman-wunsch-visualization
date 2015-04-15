@@ -4,7 +4,9 @@
   "description": "Visualizing the Needleman-Wunsch algorithm; coursework for a bioinformatics class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify src/main.js -o src/js/bundle.js",
+    "watch": "watchify --debug -v src/main.js -o src/js/bundle.js",
+    "start": "npm run build & cd src & python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,7 @@
   "homepage": "https://github.com/epiphone/needleman-wunsch-visualization",
   "dependencies": {
     "browserify": "^9.0.8",
-    "react-tools": "^0.13.1",
-    "reactify": "^1.1.0",
+    "d3": "^3.5.5",
     "watchify": "^3.1.1"
   }
 }

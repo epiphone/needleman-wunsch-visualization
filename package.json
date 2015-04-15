@@ -1,0 +1,25 @@
+{
+  "name": "needleman-wunsch-visualization",
+  "version": "1.0.0",
+  "description": "Visualizing the Needleman-Wunsch algorithm; coursework for a bioinformatics class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epiphone/needleman-wunsch-visualization.git"
+  },
+  "author": "Aleksi Pekkala",
+  "license": "APACHE 2.0",
+  "bugs": {
+    "url": "https://github.com/epiphone/needleman-wunsch-visualization/issues"
+  },
+  "homepage": "https://github.com/epiphone/needleman-wunsch-visualization",
+  "dependencies": {
+    "browserify": "^9.0.8",
+    "react-tools": "^0.13.1",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.1"
+  }
+}

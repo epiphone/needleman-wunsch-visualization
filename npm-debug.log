@@ -1,0 +1,874 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'browserify',
+1 verbose cli   'watchify',
+1 verbose cli   'reactify',
+1 verbose cli   'react-tools' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'browserify', null ]
+7 verbose cache add name=undefined spec="browserify" args=["browserify",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'browserify',
+8 verbose parsed url   path: 'browserify',
+8 verbose parsed url   href: 'browserify' }
+9 verbose cache add [ 'watchify', null ]
+10 verbose cache add name=undefined spec="watchify" args=["watchify",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'watchify',
+11 verbose parsed url   path: 'watchify',
+11 verbose parsed url   href: 'watchify' }
+12 verbose cache add [ 'reactify', null ]
+13 verbose cache add name=undefined spec="reactify" args=["reactify",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'reactify',
+14 verbose parsed url   path: 'reactify',
+14 verbose parsed url   href: 'reactify' }
+15 verbose cache add [ 'react-tools', null ]
+16 verbose cache add name=undefined spec="react-tools" args=["react-tools",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'react-tools',
+17 verbose parsed url   path: 'react-tools',
+17 verbose parsed url   href: 'react-tools' }
+18 silly lockFile 84c1c54e-browserify browserify
+19 verbose lock browserify /home/aleksi/.npm/84c1c54e-browserify.lock
+20 silly lockFile f821d843-watchify watchify
+21 verbose lock watchify /home/aleksi/.npm/f821d843-watchify.lock
+22 silly lockFile 97e36b74-reactify reactify
+23 verbose lock reactify /home/aleksi/.npm/97e36b74-reactify.lock
+24 silly lockFile 0f761efe-react-tools react-tools
+25 verbose lock react-tools /home/aleksi/.npm/0f761efe-react-tools.lock
+26 silly lockFile 97e36b74-reactify reactify
+27 silly lockFile 97e36b74-reactify reactify
+28 silly lockFile f821d843-watchify watchify
+29 silly lockFile f821d843-watchify watchify
+30 silly lockFile 0f761efe-react-tools react-tools
+31 silly lockFile 0f761efe-react-tools react-tools
+32 silly lockFile 84c1c54e-browserify browserify
+33 silly lockFile 84c1c54e-browserify browserify
+34 verbose addNamed [ 'reactify', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile 60172e78-reactify reactify@
+37 verbose lock reactify@ /home/aleksi/.npm/60172e78-reactify.lock
+38 verbose addNamed [ 'watchify', '' ]
+39 verbose addNamed [ null, '*' ]
+40 silly lockFile 19227da7-watchify watchify@
+41 verbose lock watchify@ /home/aleksi/.npm/19227da7-watchify.lock
+42 verbose addNamed [ 'react-tools', '' ]
+43 verbose addNamed [ null, '*' ]
+44 silly lockFile 47fcd5e0-react-tools react-tools@
+45 verbose lock react-tools@ /home/aleksi/.npm/47fcd5e0-react-tools.lock
+46 verbose addNamed [ 'browserify', '' ]
+47 verbose addNamed [ null, '*' ]
+48 silly lockFile 80140245-browserify browserify@
+49 verbose lock browserify@ /home/aleksi/.npm/80140245-browserify.lock
+50 silly addNameRange { name: 'reactify', range: '*', hasData: false }
+51 silly addNameRange { name: 'watchify', range: '*', hasData: false }
+52 silly addNameRange { name: 'react-tools', range: '*', hasData: false }
+53 silly addNameRange { name: 'browserify', range: '*', hasData: false }
+54 verbose request where is /watchify
+55 verbose request registry https://registry.npmjs.org/
+56 verbose request id 999eecfa63e78eb1
+57 verbose url raw /watchify
+58 verbose url resolving [ 'https://registry.npmjs.org/', './watchify' ]
+59 verbose url resolved https://registry.npmjs.org/watchify
+60 verbose request where is https://registry.npmjs.org/watchify
+61 info trying registry request attempt 1 at 02:42:54
+62 verbose etag "5N7B3JHNDQVN04PW5ZA502ZMP"
+63 http GET https://registry.npmjs.org/watchify
+64 verbose request where is /reactify
+65 verbose request registry https://registry.npmjs.org/
+66 verbose url raw /reactify
+67 verbose url resolving [ 'https://registry.npmjs.org/', './reactify' ]
+68 verbose url resolved https://registry.npmjs.org/reactify
+69 verbose request where is https://registry.npmjs.org/reactify
+70 info trying registry request attempt 1 at 02:42:55
+71 verbose etag "EJ6G4LYLGTLJEAN1OK63A3XYK"
+72 http GET https://registry.npmjs.org/reactify
+73 verbose request where is /browserify
+74 verbose request registry https://registry.npmjs.org/
+75 verbose url raw /browserify
+76 verbose url resolving [ 'https://registry.npmjs.org/', './browserify' ]
+77 verbose url resolved https://registry.npmjs.org/browserify
+78 verbose request where is https://registry.npmjs.org/browserify
+79 info trying registry request attempt 1 at 02:42:55
+80 verbose etag "7AJICTSZHX423Z4OPGNLTSACY"
+81 http GET https://registry.npmjs.org/browserify
+82 verbose request where is /react-tools
+83 verbose request registry https://registry.npmjs.org/
+84 verbose url raw /react-tools
+85 verbose url resolving [ 'https://registry.npmjs.org/', './react-tools' ]
+86 verbose url resolved https://registry.npmjs.org/react-tools
+87 verbose request where is https://registry.npmjs.org/react-tools
+88 info trying registry request attempt 1 at 02:42:55
+89 verbose etag "ENDKPTGUASQ54B15VKOKV46HQ"
+90 http GET https://registry.npmjs.org/react-tools
+91 http 200 https://registry.npmjs.org/watchify
+92 silly registry.get cb [ 200,
+92 silly registry.get   { date: 'Wed, 15 Apr 2015 05:42:55 GMT',
+92 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+92 silly registry.get     etag: '"BN0NHZ951G23ZRJ3HJ27DVU33"',
+92 silly registry.get     'content-type': 'application/json',
+92 silly registry.get     'cache-control': 'max-age=60',
+92 silly registry.get     'content-length': '64843',
+92 silly registry.get     'accept-ranges': 'bytes',
+92 silly registry.get     via: '1.1 varnish',
+92 silly registry.get     age: '58',
+92 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+92 silly registry.get     'x-cache': 'HIT',
+92 silly registry.get     'x-cache-hits': '1',
+92 silly registry.get     'x-timer': 'S1429076575.216271,VS0,VE0',
+92 silly registry.get     vary: 'Accept',
+92 silly registry.get     'keep-alive': 'timeout=10, max=50',
+92 silly registry.get     connection: 'Keep-Alive' } ]
+93 silly addNameRange number 2 { name: 'watchify', range: '*', hasData: true }
+94 silly addNameRange versions [ 'watchify',
+94 silly addNameRange   [ '0.0.0',
+94 silly addNameRange     '0.0.1',
+94 silly addNameRange     '0.1.0',
+94 silly addNameRange     '0.2.0',
+94 silly addNameRange     '0.3.0',
+94 silly addNameRange     '0.4.0',
+94 silly addNameRange     '0.4.1',
+94 silly addNameRange     '0.5.0',
+94 silly addNameRange     '0.5.1',
+94 silly addNameRange     '0.5.2',
+94 silly addNameRange     '0.5.3',
+94 silly addNameRange     '0.5.4',
+94 silly addNameRange     '0.5.5',
+94 silly addNameRange     '0.5.6',
+94 silly addNameRange     '0.6.0',
+94 silly addNameRange     '0.6.1',
+94 silly addNameRange     '0.6.2',
+94 silly addNameRange     '0.6.3',
+94 silly addNameRange     '0.6.4',
+94 silly addNameRange     '0.7.0',
+94 silly addNameRange     '0.7.1',
+94 silly addNameRange     '0.7.2',
+94 silly addNameRange     '0.8.0',
+94 silly addNameRange     '0.8.1',
+94 silly addNameRange     '0.8.2',
+94 silly addNameRange     '0.8.3',
+94 silly addNameRange     '0.9.0',
+94 silly addNameRange     '0.10.0',
+94 silly addNameRange     '0.10.1',
+94 silly addNameRange     '0.10.2',
+94 silly addNameRange     '1.0.0',
+94 silly addNameRange     '1.0.1',
+94 silly addNameRange     '1.0.2',
+94 silly addNameRange     '1.0.3',
+94 silly addNameRange     '1.0.4',
+94 silly addNameRange     '1.0.5',
+94 silly addNameRange     '1.0.6',
+94 silly addNameRange     '2.0.0',
+94 silly addNameRange     '2.1.0',
+94 silly addNameRange     '2.1.1',
+94 silly addNameRange     '2.2.0',
+94 silly addNameRange     '2.2.1',
+94 silly addNameRange     '2.3.0',
+94 silly addNameRange     '2.4.0',
+94 silly addNameRange     '2.5.0',
+94 silly addNameRange     '2.6.0',
+94 silly addNameRange     '2.6.1',
+94 silly addNameRange     '2.6.2',
+94 silly addNameRange     '3.0.0',
+94 silly addNameRange     '3.0.1',
+94 silly addNameRange     '3.1.0',
+94 silly addNameRange     '3.1.1' ] ]
+95 verbose addNamed [ 'watchify', '3.1.1' ]
+96 verbose addNamed [ '3.1.1', '3.1.1' ]
+97 silly lockFile 278f2427-watchify-3-1-1 watchify@3.1.1
+98 verbose lock watchify@3.1.1 /home/aleksi/.npm/278f2427-watchify-3-1-1.lock
+99 silly lockFile 99a75a27--org-watchify-watchify-3-1-1-tgz https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+100 verbose lock https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz /home/aleksi/.npm/99a75a27--org-watchify-watchify-3-1-1-tgz.lock
+101 verbose addRemoteTarball [ 'https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz',
+101 verbose addRemoteTarball   'd2d7876050f57ce8996671fb050a5c8b1884f02f' ]
+102 info retry fetch attempt 1 at 02:42:55
+103 verbose fetch to= /tmp/npm-15559-vTt2-_+8/registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+104 http GET https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+105 http 200 https://registry.npmjs.org/reactify
+106 silly registry.get cb [ 200,
+106 silly registry.get   { date: 'Wed, 15 Apr 2015 05:42:55 GMT',
+106 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+106 silly registry.get     etag: '"DTHL1U6PS991PKX4DCBRD17HJ"',
+106 silly registry.get     'content-type': 'application/json',
+106 silly registry.get     'cache-control': 'max-age=60',
+106 silly registry.get     'content-length': '51668',
+106 silly registry.get     'accept-ranges': 'bytes',
+106 silly registry.get     via: '1.1 varnish',
+106 silly registry.get     age: '0',
+106 silly registry.get     'x-served-by': 'cache-iad2136-IAD',
+106 silly registry.get     'x-cache': 'HIT',
+106 silly registry.get     'x-cache-hits': '1',
+106 silly registry.get     'x-timer': 'S1429076575.213866,VS0,VE57',
+106 silly registry.get     vary: 'Accept',
+106 silly registry.get     'keep-alive': 'timeout=10, max=50',
+106 silly registry.get     connection: 'Keep-Alive' } ]
+107 silly addNameRange number 2 { name: 'reactify', range: '*', hasData: true }
+108 silly addNameRange versions [ 'reactify',
+108 silly addNameRange   [ '0.1.0',
+108 silly addNameRange     '0.1.1',
+108 silly addNameRange     '0.1.2',
+108 silly addNameRange     '0.1.3',
+108 silly addNameRange     '0.1.4',
+108 silly addNameRange     '0.2.0',
+108 silly addNameRange     '0.2.1',
+108 silly addNameRange     '0.2.2',
+108 silly addNameRange     '0.3.0',
+108 silly addNameRange     '0.3.1',
+108 silly addNameRange     '0.3.2',
+108 silly addNameRange     '0.4.0',
+108 silly addNameRange     '0.5.0',
+108 silly addNameRange     '0.5.1',
+108 silly addNameRange     '0.6.0',
+108 silly addNameRange     '0.6.1',
+108 silly addNameRange     '0.7.0',
+108 silly addNameRange     '0.8.0',
+108 silly addNameRange     '0.8.1',
+108 silly addNameRange     '0.9.0',
+108 silly addNameRange     '0.9.1',
+108 silly addNameRange     '0.10.0',
+108 silly addNameRange     '0.11.0',
+108 silly addNameRange     '0.12.0',
+108 silly addNameRange     '0.13.0',
+108 silly addNameRange     '0.13.1',
+108 silly addNameRange     '0.14.0',
+108 silly addNameRange     '0.15.0',
+108 silly addNameRange     '0.15.1',
+108 silly addNameRange     '0.14.1',
+108 silly addNameRange     '0.8.2',
+108 silly addNameRange     '0.9.2',
+108 silly addNameRange     '0.10.1',
+108 silly addNameRange     '0.11.1',
+108 silly addNameRange     '0.13.2',
+108 silly addNameRange     '0.12.1',
+108 silly addNameRange     '0.15.2',
+108 silly addNameRange     '0.16.0',
+108 silly addNameRange     '0.17.0',
+108 silly addNameRange     '0.17.1',
+108 silly addNameRange     '1.0.0',
+108 silly addNameRange     '1.1.0' ] ]
+109 verbose addNamed [ 'reactify', '1.1.0' ]
+110 verbose addNamed [ '1.1.0', '1.1.0' ]
+111 silly lockFile 3f2211a4-reactify-1-1-0 reactify@1.1.0
+112 verbose lock reactify@1.1.0 /home/aleksi/.npm/3f2211a4-reactify-1-1-0.lock
+113 silly lockFile edba5cce--org-reactify-reactify-1-1-0-tgz https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+114 verbose lock https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz /home/aleksi/.npm/edba5cce--org-reactify-reactify-1-1-0-tgz.lock
+115 verbose addRemoteTarball [ 'https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz',
+115 verbose addRemoteTarball   'abcefaf4fde54df0aa5343acc1cf295b7f30e394' ]
+116 info retry fetch attempt 1 at 02:42:55
+117 verbose fetch to= /tmp/npm-15559-vTt2-_+8/registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+118 http GET https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+119 http 200 https://registry.npmjs.org/react-tools
+120 silly registry.get cb [ 200,
+120 silly registry.get   { date: 'Wed, 15 Apr 2015 05:42:55 GMT',
+120 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+120 silly registry.get     etag: '"5J11DRAFF06MPHPT3SOQDRNHU"',
+120 silly registry.get     'content-type': 'application/json',
+120 silly registry.get     'cache-control': 'max-age=60',
+120 silly registry.get     'content-length': '65219',
+120 silly registry.get     'accept-ranges': 'bytes',
+120 silly registry.get     via: '1.1 varnish',
+120 silly registry.get     age: '23',
+120 silly registry.get     'x-served-by': 'cache-iad2141-IAD',
+120 silly registry.get     'x-cache': 'HIT',
+120 silly registry.get     'x-cache-hits': '1',
+120 silly registry.get     'x-timer': 'S1429076575.264138,VS0,VE0',
+120 silly registry.get     vary: 'Accept',
+120 silly registry.get     'keep-alive': 'timeout=10, max=50',
+120 silly registry.get     connection: 'Keep-Alive' } ]
+121 silly addNameRange number 2 { name: 'react-tools', range: '*', hasData: true }
+122 silly addNameRange versions [ 'react-tools',
+122 silly addNameRange   [ '0.3.0',
+122 silly addNameRange     '0.3.1',
+122 silly addNameRange     '0.3.2',
+122 silly addNameRange     '0.3.3',
+122 silly addNameRange     '0.4.0',
+122 silly addNameRange     '0.4.1',
+122 silly addNameRange     '0.5.0',
+122 silly addNameRange     '0.5.1',
+122 silly addNameRange     '0.4.2',
+122 silly addNameRange     '0.5.2',
+122 silly addNameRange     '0.8.0',
+122 silly addNameRange     '0.9.0-rc1',
+122 silly addNameRange     '0.9.0',
+122 silly addNameRange     '0.10.0-rc1',
+122 silly addNameRange     '0.10.0',
+122 silly addNameRange     '0.11.0-rc1',
+122 silly addNameRange     '0.11.0',
+122 silly addNameRange     '0.11.1',
+122 silly addNameRange     '0.11.2',
+122 silly addNameRange     '0.12.0-rc1',
+122 silly addNameRange     '0.12.0',
+122 silly addNameRange     '0.12.1',
+122 silly addNameRange     '0.12.2',
+122 silly addNameRange     '0.13.0-alpha.1',
+122 silly addNameRange     '0.13.0-alpha.2',
+122 silly addNameRange     '0.13.0-beta.1',
+122 silly addNameRange     '0.13.0-beta.2',
+122 silly addNameRange     '0.13.0-rc1',
+122 silly addNameRange     '0.13.0-rc2',
+122 silly addNameRange     '0.13.0',
+122 silly addNameRange     '0.13.1' ] ]
+123 verbose addNamed [ 'react-tools', '0.13.1' ]
+124 verbose addNamed [ '0.13.1', '0.13.1' ]
+125 silly lockFile bcc38442-react-tools-0-13-1 react-tools@0.13.1
+126 verbose lock react-tools@0.13.1 /home/aleksi/.npm/bcc38442-react-tools-0-13-1.lock
+127 silly lockFile 01386f93-act-tools-react-tools-0-13-1-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+128 verbose lock https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz /home/aleksi/.npm/01386f93-act-tools-react-tools-0-13-1-tgz.lock
+129 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz',
+129 verbose addRemoteTarball   '7e8ea87c771d9f2114473950fa2fa8d2e3b8200d' ]
+130 info retry fetch attempt 1 at 02:42:55
+131 verbose fetch to= /tmp/npm-15559-vTt2-_+8/registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+132 http GET https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+133 http 200 https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+134 http 200 https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+135 silly lockFile edba5cce--org-reactify-reactify-1-1-0-tgz https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+136 silly lockFile edba5cce--org-reactify-reactify-1-1-0-tgz https://registry.npmjs.org/reactify/-/reactify-1.1.0.tgz
+137 silly lockFile 3f2211a4-reactify-1-1-0 reactify@1.1.0
+138 silly lockFile 3f2211a4-reactify-1-1-0 reactify@1.1.0
+139 silly lockFile 60172e78-reactify reactify@
+140 silly lockFile 60172e78-reactify reactify@
+141 silly lockFile 99a75a27--org-watchify-watchify-3-1-1-tgz https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+142 silly lockFile 99a75a27--org-watchify-watchify-3-1-1-tgz https://registry.npmjs.org/watchify/-/watchify-3.1.1.tgz
+143 silly lockFile 278f2427-watchify-3-1-1 watchify@3.1.1
+144 silly lockFile 278f2427-watchify-3-1-1 watchify@3.1.1
+145 silly lockFile 19227da7-watchify watchify@
+146 silly lockFile 19227da7-watchify watchify@
+147 http 200 https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+148 http 200 https://registry.npmjs.org/browserify
+149 silly registry.get cb [ 200,
+149 silly registry.get   { date: 'Wed, 15 Apr 2015 05:42:55 GMT',
+149 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+149 silly registry.get     etag: '"8Y2NNNP83JBFNG0GWW6BZUBCI"',
+149 silly registry.get     'content-type': 'application/json',
+149 silly registry.get     'cache-control': 'max-age=60',
+149 silly registry.get     'content-length': '796765',
+149 silly registry.get     'accept-ranges': 'bytes',
+149 silly registry.get     via: '1.1 varnish',
+149 silly registry.get     age: '58',
+149 silly registry.get     'x-served-by': 'cache-iad2137-IAD',
+149 silly registry.get     'x-cache': 'HIT',
+149 silly registry.get     'x-cache-hits': '1',
+149 silly registry.get     'x-timer': 'S1429076575.240986,VS0,VE4',
+149 silly registry.get     vary: 'Accept',
+149 silly registry.get     'keep-alive': 'timeout=10, max=50',
+149 silly registry.get     connection: 'Keep-Alive' } ]
+150 silly addNameRange number 2 { name: 'browserify', range: '*', hasData: true }
+151 silly addNameRange versions [ 'browserify',
+151 silly addNameRange   [ '0.0.1',
+151 silly addNameRange     '0.0.2',
+151 silly addNameRange     '0.0.3',
+151 silly addNameRange     '0.0.4',
+151 silly addNameRange     '0.0.5',
+151 silly addNameRange     '0.1.0',
+151 silly addNameRange     '0.1.1',
+151 silly addNameRange     '0.1.2',
+151 silly addNameRange     '0.1.3',
+151 silly addNameRange     '0.1.4',
+151 silly addNameRange     '0.1.5',
+151 silly addNameRange     '0.2.0',
+151 silly addNameRange     '0.2.1',
+151 silly addNameRange     '0.2.2',
+151 silly addNameRange     '0.2.3',
+151 silly addNameRange     '0.2.4',
+151 silly addNameRange     '0.2.5',
+151 silly addNameRange     '0.2.6',
+151 silly addNameRange     '0.2.7',
+151 silly addNameRange     '0.2.8',
+151 silly addNameRange     '0.2.9',
+151 silly addNameRange     '0.2.10',
+151 silly addNameRange     '0.2.11',
+151 silly addNameRange     '0.3.0',
+151 silly addNameRange     '0.3.1',
+151 silly addNameRange     '0.3.2',
+151 silly addNameRange     '0.3.3',
+151 silly addNameRange     '0.3.4',
+151 silly addNameRange     '0.3.5',
+151 silly addNameRange     '0.3.6',
+151 silly addNameRange     '0.3.7',
+151 silly addNameRange     '0.4.0',
+151 silly addNameRange     '0.4.1',
+151 silly addNameRange     '0.4.2',
+151 silly addNameRange     '0.4.3',
+151 silly addNameRange     '0.4.4',
+151 silly addNameRange     '0.4.5',
+151 silly addNameRange     '0.4.6',
+151 silly addNameRange     '0.4.7',
+151 silly addNameRange     '0.4.8',
+151 silly addNameRange     '0.4.9',
+151 silly addNameRange     '0.4.10',
+151 silly addNameRange     '0.4.11',
+151 silly addNameRange     '0.4.12',
+151 silly addNameRange     '0.4.13',
+151 silly addNameRange     '0.4.14',
+151 silly addNameRange     '0.4.15',
+151 silly addNameRange     '0.5.0',
+151 silly addNameRange     '0.5.1',
+151 silly addNameRange     '0.5.2',
+151 silly addNameRange     '1.0.0',
+151 silly addNameRange     '1.1.0',
+151 silly addNameRange     '1.1.1',
+151 silly addNameRange     '1.1.2',
+151 silly addNameRange     '1.1.3',
+151 silly addNameRange     '1.1.4',
+151 silly addNameRange     '1.2.0',
+151 silly addNameRange     '1.2.1',
+151 silly addNameRange     '1.2.2',
+151 silly addNameRange     '1.2.3',
+151 silly addNameRange     '1.2.4',
+151 silly addNameRange     '1.2.5',
+151 silly addNameRange     '1.2.6',
+151 silly addNameRange     '1.2.7',
+151 silly addNameRange     '1.2.8',
+151 silly addNameRange     '1.2.9',
+151 silly addNameRange     '1.3.0',
+151 silly addNameRange     '1.4.0',
+151 silly addNameRange     '1.4.1',
+151 silly addNameRange     '1.4.2',
+151 silly addNameRange     '1.4.3',
+151 silly addNameRange     '1.4.4',
+151 silly addNameRange     '1.4.5',
+151 silly addNameRange     '1.4.6',
+151 silly addNameRange     '1.4.7',
+151 silly addNameRange     '1.4.8',
+151 silly addNameRange     '1.5.0',
+151 silly addNameRange     '1.6.0',
+151 silly addNameRange     '1.6.1',
+151 silly addNameRange     '1.7.0',
+151 silly addNameRange     '1.7.1',
+151 silly addNameRange     '1.7.2',
+151 silly addNameRange     '1.7.3',
+151 silly addNameRange     '1.7.4',
+151 silly addNameRange     '1.7.5',
+151 silly addNameRange     '1.7.6',
+151 silly addNameRange     '1.7.7',
+151 silly addNameRange     '1.8.0',
+151 silly addNameRange     '1.8.1',
+151 silly addNameRange     '1.8.2',
+151 silly addNameRange     '1.8.3',
+151 silly addNameRange     '1.9.0',
+151 silly addNameRange     '1.9.1',
+151 silly addNameRange     '1.9.2',
+151 silly addNameRange     '1.9.3',
+151 silly addNameRange     '1.9.4',
+151 silly addNameRange     '1.10.0',
+151 silly addNameRange     '1.10.1',
+151 silly addNameRange     '1.10.2',
+151 silly addNameRange     '1.10.3',
+151 silly addNameRange     '1.10.4',
+151 silly addNameRange     '1.10.5',
+151 silly addNameRange     '1.10.6',
+151 silly addNameRange     '1.10.7',
+151 silly addNameRange     '1.10.8',
+151 silly addNameRange     '1.10.9',
+151 silly addNameRange     '1.10.11',
+151 silly addNameRange     '1.10.12',
+151 silly addNameRange     '1.10.13',
+151 silly addNameRange     '1.10.14',
+151 silly addNameRange     '1.10.15',
+151 silly addNameRange     '1.10.16',
+151 silly addNameRange     '1.10.17',
+151 silly addNameRange     '1.11.0',
+151 silly addNameRange     '1.11.1',
+151 silly addNameRange     '1.12.0',
+151 silly addNameRange     '1.12.1',
+151 silly addNameRange     '1.12.2',
+151 silly addNameRange     '1.12.3',
+151 silly addNameRange     '1.13.0',
+151 silly addNameRange     '1.13.1',
+151 silly addNameRange     '1.13.2',
+151 silly addNameRange     '1.13.3',
+151 silly addNameRange     '1.13.4',
+151 silly addNameRange     '1.13.5',
+151 silly addNameRange     '1.13.6',
+151 silly addNameRange     '1.13.8',
+151 silly addNameRange     '1.13.9',
+151 silly addNameRange     '1.13.10',
+151 silly addNameRange     '1.14.0',
+151 silly addNameRange     '1.14.1',
+151 silly addNameRange     '1.14.2',
+151 silly addNameRange     '1.14.3',
+151 silly addNameRange     '1.14.4',
+151 silly addNameRange     '1.14.5',
+151 silly addNameRange     '1.15.0',
+151 silly addNameRange     '1.15.1',
+151 silly addNameRange     '1.15.2',
+151 silly addNameRange     '1.15.3',
+151 silly addNameRange     '1.15.4',
+151 silly addNameRange     '1.15.5',
+151 silly addNameRange     '1.15.6',
+151 silly addNameRange     '1.16.0',
+151 silly addNameRange     '1.16.1',
+151 silly addNameRange     '1.16.2',
+151 silly addNameRange     '1.16.3',
+151 silly addNameRange     '1.16.4',
+151 silly addNameRange     '1.16.5',
+151 silly addNameRange     '1.16.6',
+151 silly addNameRange     '1.16.7',
+151 silly addNameRange     '1.16.8',
+151 silly addNameRange     '1.17.0',
+151 silly addNameRange     '1.17.1',
+151 silly addNameRange     '1.17.2',
+151 silly addNameRange     '1.17.3',
+151 silly addNameRange     '1.18.0',
+151 silly addNameRange     '2.0.0',
+151 silly addNameRange     '2.0.1',
+151 silly addNameRange     '2.1.0',
+151 silly addNameRange     '2.2.0',
+151 silly addNameRange     '2.2.1',
+151 silly addNameRange     '2.2.2',
+151 silly addNameRange     '2.2.3',
+151 silly addNameRange     '2.2.4',
+151 silly addNameRange     '2.2.5',
+151 silly addNameRange     '2.2.6',
+151 silly addNameRange     '2.3.0',
+151 silly addNameRange     '2.3.1',
+151 silly addNameRange     '2.4.0',
+151 silly addNameRange     '2.4.1',
+151 silly addNameRange     '2.4.2',
+151 silly addNameRange     '2.4.3',
+151 silly addNameRange     '2.5.0',
+151 silly addNameRange     '2.5.1',
+151 silly addNameRange     '2.6.0',
+151 silly addNameRange     '2.6.1',
+151 silly addNameRange     '2.7.0',
+151 silly addNameRange     '2.7.1',
+151 silly addNameRange     '2.7.2',
+151 silly addNameRange     '2.7.3',
+151 silly addNameRange     '2.7.4',
+151 silly addNameRange     '2.8.0',
+151 silly addNameRange     '2.8.1',
+151 silly addNameRange     '2.9.0',
+151 silly addNameRange     '2.10.0',
+151 silly addNameRange     '2.10.1',
+151 silly addNameRange     '2.10.2',
+151 silly addNameRange     '2.11.0',
+151 silly addNameRange     '2.12.0',
+151 silly addNameRange     '2.12.1',
+151 silly addNameRange     '2.12.2',
+151 silly addNameRange     '2.12.3',
+151 silly addNameRange     '2.12.4',
+151 silly addNameRange     '2.12.5',
+151 silly addNameRange     '2.13.0',
+151 silly addNameRange     '2.13.1',
+151 silly addNameRange     '2.13.2',
+151 silly addNameRange     '2.13.3',
+151 silly addNameRange     '2.14.0',
+151 silly addNameRange     '2.14.1',
+151 silly addNameRange     '2.14.2',
+151 silly addNameRange     '2.15.0',
+151 silly addNameRange     '2.16.0',
+151 silly addNameRange     '2.17.0',
+151 silly addNameRange     '2.17.1',
+151 silly addNameRange     '2.17.2',
+151 silly addNameRange     '2.17.3',
+151 silly addNameRange     '2.17.4',
+151 silly addNameRange     '2.18.0',
+151 silly addNameRange     '2.18.1',
+151 silly addNameRange     '2.19.0',
+151 silly addNameRange     '2.20.0',
+151 silly addNameRange     '2.20.1',
+151 silly addNameRange     '2.20.2',
+151 silly addNameRange     '2.21.0',
+151 silly addNameRange     '2.22.0',
+151 silly addNameRange     '2.23.0',
+151 silly addNameRange     '2.23.1',
+151 silly addNameRange     '2.24.0',
+151 silly addNameRange     '2.24.1',
+151 silly addNameRange     '2.24.2',
+151 silly addNameRange     '2.24.3',
+151 silly addNameRange     '2.25.0',
+151 silly addNameRange     '2.25.1',
+151 silly addNameRange     '2.26.0',
+151 silly addNameRange     '2.27.0',
+151 silly addNameRange     '2.27.1',
+151 silly addNameRange     '2.28.0',
+151 silly addNameRange     '2.29.0',
+151 silly addNameRange     '2.29.1',
+151 silly addNameRange     '2.30.0',
+151 silly addNameRange     '2.31.0',
+151 silly addNameRange     '2.32.0',
+151 silly addNameRange     '2.32.1',
+151 silly addNameRange     '2.32.2',
+151 silly addNameRange     '2.32.3',
+151 silly addNameRange     '2.32.4',
+151 silly addNameRange     '2.33.0',
+151 silly addNameRange     '2.33.1',
+151 silly addNameRange     '2.34.0',
+151 silly addNameRange     '2.34.1',
+151 silly addNameRange     '2.34.2',
+151 silly addNameRange     '2.34.3',
+151 silly addNameRange     '2.35.0',
+151 silly addNameRange     '2.35.1',
+151 silly addNameRange     '2.35.2',
+151 silly addNameRange     '2.35.3',
+151 silly addNameRange     '2.35.4',
+151 silly addNameRange     '2.36.0',
+151 silly addNameRange     '2.36.1',
+151 silly addNameRange     '3.0.0',
+151 silly addNameRange     '3.1.0',
+151 silly addNameRange     '3.1.1',
+151 silly addNameRange     '3.1.2',
+151 silly addNameRange     '3.1.3',
+151 silly addNameRange     '3.2.0',
+151 silly addNameRange     '3.2.1',
+151 silly addNameRange     '3.2.2',
+151 silly addNameRange     '3.3.0',
+151 silly addNameRange     '3.4.0',
+151 silly addNameRange     '3.4.1',
+151 silly addNameRange     '3.5.0',
+151 silly addNameRange     '3.6.0',
+151 silly addNameRange     '3.7.0',
+151 silly addNameRange     '3.8.0',
+151 silly addNameRange     '3.8.1',
+151 silly addNameRange     '3.9.0',
+151 silly addNameRange     '3.9.1',
+151 silly addNameRange     '3.10.0',
+151 silly addNameRange     '3.11.0',
+151 silly addNameRange     '3.11.1',
+151 silly addNameRange     '3.12.0',
+151 silly addNameRange     '3.13.0',
+151 silly addNameRange     '3.14.0',
+151 silly addNameRange     '3.14.1',
+151 silly addNameRange     '3.16.0',
+151 silly addNameRange     '3.16.1',
+151 silly addNameRange     '3.17.0',
+151 silly addNameRange     '3.18.0',
+151 silly addNameRange     '3.19.0',
+151 silly addNameRange     '3.19.1',
+151 silly addNameRange     '3.20.0',
+151 silly addNameRange     '3.20.1',
+151 silly addNameRange     '3.20.2',
+151 silly addNameRange     '3.21.0',
+151 silly addNameRange     '3.21.1',
+151 silly addNameRange     '3.22.0',
+151 silly addNameRange     '3.22.1',
+151 silly addNameRange     '3.23.0',
+151 silly addNameRange     '3.23.1',
+151 silly addNameRange     '3.24.0',
+151 silly addNameRange     '3.24.1',
+151 silly addNameRange     '3.24.2',
+151 silly addNameRange     '3.24.3',
+151 silly addNameRange     '3.24.4',
+151 silly addNameRange     '3.24.5',
+151 silly addNameRange     '3.24.6',
+151 silly addNameRange     '3.24.7',
+151 silly addNameRange     '3.24.8',
+151 silly addNameRange     '3.24.9',
+151 silly addNameRange     '3.24.10',
+151 silly addNameRange     '3.24.11',
+151 silly addNameRange     '3.24.13',
+151 silly addNameRange     '3.25.0',
+151 silly addNameRange     '3.25.1',
+151 silly addNameRange     '3.25.2',
+151 silly addNameRange     '3.26.0',
+151 silly addNameRange     '3.27.0',
+151 silly addNameRange     '3.27.1',
+151 silly addNameRange     '3.28.0',
+151 silly addNameRange     '3.28.1',
+151 silly addNameRange     '3.28.2',
+151 silly addNameRange     '3.29.0',
+151 silly addNameRange     '3.29.1',
+151 silly addNameRange     '3.30.0',
+151 silly addNameRange     '3.30.1',
+151 silly addNameRange     '3.30.2',
+151 silly addNameRange     '3.30.3',
+151 silly addNameRange     '3.30.4',
+151 silly addNameRange     '3.31.0',
+151 silly addNameRange     '3.31.1',
+151 silly addNameRange     '3.31.2',
+151 silly addNameRange     '3.32.0',
+151 silly addNameRange     '3.32.1',
+151 silly addNameRange     '3.33.0',
+151 silly addNameRange     '3.33.1',
+151 silly addNameRange     '3.34.0',
+151 silly addNameRange     '3.35.0',
+151 silly addNameRange     '3.36.0',
+151 silly addNameRange     '3.36.1',
+151 silly addNameRange     '3.37.0',
+151 silly addNameRange     '3.37.1',
+151 silly addNameRange     '3.37.2',
+151 silly addNameRange     '3.38.0',
+151 silly addNameRange     '3.38.1',
+151 silly addNameRange     '3.39.0',
+151 silly addNameRange     '3.40.0',
+151 silly addNameRange     '3.40.1',
+151 silly addNameRange     '3.40.2',
+151 silly addNameRange     '3.40.3',
+151 silly addNameRange     '3.40.4',
+151 silly addNameRange     '3.41.0',
+151 silly addNameRange     '3.42.0',
+151 silly addNameRange     '3.43.0',
+151 silly addNameRange     '3.44.0',
+151 silly addNameRange     '3.44.1',
+151 silly addNameRange     '3.44.2',
+151 silly addNameRange     '3.45.0',
+151 silly addNameRange     '3.46.0',
+151 silly addNameRange     '3.46.1',
+151 silly addNameRange     '4.0.0',
+151 silly addNameRange     '4.1.0',
+151 silly addNameRange     '4.1.1',
+151 silly addNameRange     '4.1.2',
+151 silly addNameRange     '4.1.3',
+151 silly addNameRange     '4.1.4',
+151 silly addNameRange     '4.1.5',
+151 silly addNameRange     '4.1.6',
+151 silly addNameRange     '4.1.7',
+151 silly addNameRange     '4.1.8',
+151 silly addNameRange     '4.1.9',
+151 silly addNameRange     '4.1.10',
+151 silly addNameRange     '4.1.11',
+151 silly addNameRange     '4.2.0',
+151 silly addNameRange     '4.2.1',
+151 silly addNameRange     '4.2.2',
+151 silly addNameRange     '4.2.3',
+151 silly addNameRange     '5.0.0',
+151 silly addNameRange     '5.0.1',
+151 silly addNameRange     '5.0.2',
+151 silly addNameRange     '5.0.3',
+151 silly addNameRange     '5.0.4',
+151 silly addNameRange     '5.0.5',
+151 silly addNameRange     '5.0.6',
+151 silly addNameRange     '5.0.7',
+151 silly addNameRange     '5.0.8',
+151 silly addNameRange     '5.1.0',
+151 silly addNameRange     '5.1.1',
+151 silly addNameRange     '5.2.0',
+151 silly addNameRange     '5.2.1',
+151 silly addNameRange     '5.3.0',
+151 silly addNameRange     '5.4.0',
+151 silly addNameRange     '5.4.1',
+151 silly addNameRange     '5.4.2',
+151 silly addNameRange     '5.5.0',
+151 silly addNameRange     '5.6.0',
+151 silly addNameRange     '5.6.1',
+151 silly addNameRange     '5.7.0',
+151 silly addNameRange     '5.8.0',
+151 silly addNameRange     '5.9.0',
+151 silly addNameRange     '5.9.1',
+151 silly addNameRange     '5.9.2',
+151 silly addNameRange     '5.9.3',
+151 silly addNameRange     '5.10.0',
+151 silly addNameRange     '5.10.1',
+151 silly addNameRange     '5.11.0',
+151 silly addNameRange     '5.11.1',
+151 silly addNameRange     '5.11.2',
+151 silly addNameRange     '5.12.0',
+151 silly addNameRange     '5.12.1',
+151 silly addNameRange     '5.12.2',
+151 silly addNameRange     '5.13.0',
+151 silly addNameRange     '5.13.1',
+151 silly addNameRange     '6.0.0',
+151 silly addNameRange     '6.0.1',
+151 silly addNameRange     '6.0.2',
+151 silly addNameRange     '6.0.3',
+151 silly addNameRange     '6.1.0',
+151 silly addNameRange     '6.1.1',
+151 silly addNameRange     '6.1.2',
+151 silly addNameRange     '6.2.0',
+151 silly addNameRange     '6.3.0',
+151 silly addNameRange     '6.3.1',
+151 silly addNameRange     '6.3.2',
+151 silly addNameRange     '6.3.3',
+151 silly addNameRange     '6.3.4',
+151 silly addNameRange     '7.0.0',
+151 silly addNameRange     '7.0.1',
+151 silly addNameRange     '7.0.2',
+151 silly addNameRange     '7.0.3',
+151 silly addNameRange     '7.1.0',
+151 silly addNameRange     '8.0.0',
+151 silly addNameRange     '8.0.1',
+151 silly addNameRange     '8.0.2',
+151 silly addNameRange     '8.0.3',
+151 silly addNameRange     '8.1.0',
+151 silly addNameRange     '8.1.1',
+151 silly addNameRange     '8.1.2',
+151 silly addNameRange     '8.1.3',
+151 silly addNameRange     '9.0.0',
+151 silly addNameRange     '9.0.1',
+151 silly addNameRange     '9.0.2',
+151 silly addNameRange     '9.0.3',
+151 silly addNameRange     '9.0.4',
+151 silly addNameRange     '9.0.5',
+151 silly addNameRange     '9.0.6',
+151 silly addNameRange     '9.0.7',
+151 silly addNameRange     '9.0.8' ] ]
+152 verbose addNamed [ 'browserify', '9.0.8' ]
+153 verbose addNamed [ '9.0.8', '9.0.8' ]
+154 silly lockFile db06e6fc-browserify-9-0-8 browserify@9.0.8
+155 verbose lock browserify@9.0.8 /home/aleksi/.npm/db06e6fc-browserify-9-0-8.lock
+156 silly lockFile 01386f93-act-tools-react-tools-0-13-1-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+157 silly lockFile 01386f93-act-tools-react-tools-0-13-1-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.1.tgz
+158 silly lockFile bcc38442-react-tools-0-13-1 react-tools@0.13.1
+159 silly lockFile bcc38442-react-tools-0-13-1 react-tools@0.13.1
+160 silly lockFile 47fcd5e0-react-tools react-tools@
+161 silly lockFile 47fcd5e0-react-tools react-tools@
+162 silly lockFile 79f5a089--browserify-browserify-9-0-8-tgz https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+163 verbose lock https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz /home/aleksi/.npm/79f5a089--browserify-browserify-9-0-8-tgz.lock
+164 verbose addRemoteTarball [ 'https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz',
+164 verbose addRemoteTarball   '91859e9f60384459ead554df89cff03c734f159b' ]
+165 info retry fetch attempt 1 at 02:42:56
+166 verbose fetch to= /tmp/npm-15559-vTt2-_+8/registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+167 http GET https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+168 http 200 https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+169 silly lockFile 79f5a089--browserify-browserify-9-0-8-tgz https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+170 silly lockFile 79f5a089--browserify-browserify-9-0-8-tgz https://registry.npmjs.org/browserify/-/browserify-9.0.8.tgz
+171 silly lockFile db06e6fc-browserify-9-0-8 browserify@9.0.8
+172 silly lockFile db06e6fc-browserify-9-0-8 browserify@9.0.8
+173 silly lockFile 80140245-browserify browserify@
+174 silly lockFile 80140245-browserify browserify@
+175 error Error: EACCES, mkdir '/home/aleksi/.npm/watchify/3.1.1'
+175 error  { [Error: EACCES, mkdir '/home/aleksi/.npm/watchify/3.1.1']
+175 error   errno: 3,
+175 error   code: 'EACCES',
+175 error   path: '/home/aleksi/.npm/watchify/3.1.1',
+175 error   parent: 'needleman-wunsch-visualization' }
+176 error Please try running this command again as root/Administrator.
+177 error System Linux 3.13.0-49-generic
+178 error command "/usr/bin/node" "/usr/bin/npm" "install" "--save" "browserify" "watchify" "reactify" "react-tools"
+179 error cwd /home/aleksi/koodi/needleman-wunsch-visualization
+180 error node -v v0.10.37
+181 error npm -v 1.4.28
+182 error path /home/aleksi/.npm/watchify/3.1.1
+183 error code EACCES
+184 error errno 3
+185 error stack Error: EACCES, mkdir '/home/aleksi/.npm/watchify/3.1.1'
+186 verbose exit [ 3, true ]

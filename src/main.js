@@ -11,6 +11,7 @@
 
 var d3 = require('d3');
 var $ = require('jquery');
+var _ = require('underscore');
 
 var elem = $('#visualization');
 var width;
@@ -28,12 +29,14 @@ var blockMargin = 3;
 
 var seqA;
 var seqB;
-var gapPenalty;
-var scoringFunc;
+var matchBonus = 1;
+var mismatchPenalty = -1;
+var gapPenalty = -1;
 var matrix;
 var nextMatrixPos;
 
-var stepDuration = 10;
+var stepDuration = 1000;
+var stepTimeout;
 
 
 var svg = d3.select(elem[0]).append('svg')
@@ -43,11 +46,11 @@ var svg = d3.select(elem[0]).append('svg')
 function step() {
     // Check if finished, otherwise fill more
     if (nextMatrixPos.y >= matrix.length) {
-        console.log('traceback TODO');
+        traceback();
     } else {
         updateMatrix();
         updateVisualization();
-        setTimeout(step, stepDuration);
+        stepTimeout = setTimeout(step, stepDuration);
     }
 }
 
@@ -78,6 +81,8 @@ function initMatrix() {
     }
 
     // Initialize SVG container
+    $(svg[0]).empty();
+
     svg.attr('width', width)
         .attr('height', blockFullWidth * rows + margin.top + margin.bottom);
 
@@ -85,13 +90,13 @@ function initMatrix() {
     svg.append('defs').append('marker')
         .attr('id', 'arrowhead')
         .attr("viewBox", "0 -5 10 10")
-        .attr("refX", 10)
+        .attr("refX", 4)
         .attr("refY", 0)
-        .attr("markerWidth", 10)
-        .attr("markerHeight", 10)
+        .attr("markerWidth", 6)
+        .attr("markerHeight", 6)
         .attr("orient", "auto")
         .append("svg:path")
-        .attr("d", "M0,-3L5,0L0,3L5");
+        .attr("d", "M0,-5L5,0L0,5L5");
 
     // SVG element groups
     blocksGroup = svg.append('g')
@@ -228,31 +233,60 @@ function updateVisualization() {
         })
         .attr('marker-end', 'url(#arrowhead)')
         .attr('stroke', 'black')
-        .attr('stroke-width', 3)
+        .attr('stroke-width', 4)
         .attr('opacity', 0)
         .transition().duration(1000)
-        .attr('opacity', 0.2);
+        .attr('opacity', 0.1);
+}
+
+function traceback() { console.log(getTracebacks()); }
+
+function getTracebacks() {
+    function recur(x, y, prev) {
+
+        if (x === 0 && y === 0) return [prev];
+
+        var pos = matrix[y][x];
+        var a = seqA[x-1];
+        var b = seqB[y-1];
+        if (a === undefined || b === undefined) console.log(x, y, prev);
+
+        var alignments = pos.parents.map(function(p) {
+            if (p === 'diagonal') return recur(x-1, y-1, {a: a + prev.a, b: b + prev.b});
+            if (p === 'horizontal') return recur(x-1, y, {a: a + prev.a, b: '-' + prev.b});
+            return recur(x, y-1, {a: '-' + prev.a, b: b + prev.b});
+        });
+
+        return _.flatten(alignments);
+    }
+
+    return recur(seqA.length, seqB.length, {a: '', b: ''});
 }
 
 function getBlockColor(d) {
     return '#DEEDFC';
 }
 
-
-// TODO TESTING
-seqA = 'GCATGCU'; //'GAATTCAGTTA';
-seqB = 'GATTACA'; //'GGATCGA';
-gapPenalty = -1; //-1;
-scoringFunc = function(a, b) {
-    // return a === b ? 5 : -3;
-    return a === b ? 1 : -1;
+var scoringFunc = function(a, b) {
+    return a === b ? matchBonus : mismatchPenalty;
 };
 
+$('form').on('submit', start);
 
+/* Read inputs from form, start animation. */
 function start() {
+    seqA = $('#seqA').val();
+    seqB = $('#seqB').val();
+    matchBonus = parseFloat($('#match').val());
+    mismatchPenalty = parseFloat($('#mismatch').val());
+    gapPenalty = parseFloat($('#gap').val());
+    stepDuration = parseFloat($('#step').val());
+
+    clearTimeout(stepTimeout);
+    window.location.hash = '#visualization';
     initMatrix();
     updateVisualization();
-    setTimeout(step, 10);
+    setTimeout(step, 1); // TODO check time
+    return false;
 }
 
-start();

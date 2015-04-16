@@ -22,12 +22,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#/">Visualizing the Needleman-Wunsch algorithm</a>
+                <a class="navbar-brand">Visualizing the Needleman-Wunsch algorithm</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="https://github.com/epiphone/needleman-wunsch-visualization/blob/master/README.md">README</a></li>
                     <li><a href="https://github.com/epiphone/needleman-wunsch-visualization">Source</a></li>
                 </ul>
             </div>
@@ -35,7 +34,44 @@
     </nav>
 
     <div id="application" class="container">
-        <div class="class">
+        <div class="row">
+            <div class="col-sm-6">
+                Enter two DNA sequences and see how the Needleman-Wunsch algorithm computes the optimal global alignments. Note! Works best with Firefox & Chrome.
+            </div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="seqA">1. sequence</label>
+                        <input class="form-control" id="seqA" value="GCATGCU" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="seqB">2. sequence</label>
+                        <input class="form-control" id="seqB" value="GATTACA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="match">Match bonus</label>
+                        <input type="number" class="form-control" id="match" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mismatch">Mismatch penalty</label>
+                        <input type="number" class="form-control" id="mismatch" value="-1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gap">Gap penalty</label>
+                        <input type="number" class="form-control" id="gap" value="-1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gap">Animation speed (ms)</label>
+                        <input type="number" class="form-control" id="step" value="1000" required>
+                    </div>
+                    <button type="submit" class="btn btn-default">Run</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
                 <div id="visualization"></div>
             </div>

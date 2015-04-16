@@ -1,3 +1,7 @@
 .blocks text {
     font-size: 1.2em;
 }
+
+#results {
+    font-family: monospace;
+}

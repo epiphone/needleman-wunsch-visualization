@@ -177,6 +177,7 @@ function updateVisualization() {
                             x: j,
                             y: i,
                             dir: p,
+                            id: [j, i, p].join('-'),
                         });
                     });
                 }
@@ -239,28 +240,48 @@ function updateVisualization() {
         .attr('opacity', 0.1);
 }
 
-function traceback() { console.log(getTracebacks()); }
+function traceback() {
+    var tracebacks = getTracebacks();
+    var alignments = tracebacks.map(function(d) {
+        return d.a + '<br>' + d.b + '<br>';
+    });
+    var results = alignments.join('<br>');
+    $('#results').html(results);
 
+    var lineIds = {};
+    tracebacks.forEach(function(tb) {
+        tb.arrows.forEach(function(a) {
+            lineIds[[a.x, a.y, a.parent].join('-')] = true;
+        });
+    });
+
+    arrowsGroup.selectAll('line')
+        .transition().duration(1000)
+        .style('opacity', function(d) { return d.id in lineIds ? 1 : 0.1; });
+
+    window.location.hash = '#results';
+}
+
+/* Find the optimal alignments by following the matrix arrows recursively. */
 function getTracebacks() {
     function recur(x, y, prev) {
-
-        if (x === 0 && y === 0) return [prev];
+        if (x === 0 || y === 0) return [prev];
 
         var pos = matrix[y][x];
         var a = seqA[x-1];
         var b = seqB[y-1];
-        if (a === undefined || b === undefined) console.log(x, y, prev);
 
         var alignments = pos.parents.map(function(p) {
-            if (p === 'diagonal') return recur(x-1, y-1, {a: a + prev.a, b: b + prev.b});
-            if (p === 'horizontal') return recur(x-1, y, {a: a + prev.a, b: '-' + prev.b});
-            return recur(x, y-1, {a: '-' + prev.a, b: b + prev.b});
+            var arrows = prev.arrows.concat({parent: p, x: x, y: y});
+            if (p === 'diagonal') return recur(x-1, y-1, {a: a + prev.a, b: b + prev.b, arrows: arrows});
+            if (p === 'horizontal') return recur(x-1, y, {a: a + prev.a, b: '-' + prev.b, arrows: arrows});
+            return recur(x, y-1, {a: '-' + prev.a, b: b + prev.b, arrows: arrows});
         });
 
         return _.flatten(alignments);
     }
 
-    return recur(seqA.length, seqB.length, {a: '', b: ''});
+    return recur(seqA.length, seqB.length, {a: '', b: '', arrows: []});
 }
 
 function getBlockColor(d) {
@@ -275,8 +296,8 @@ $('form').on('submit', start);
 
 /* Read inputs from form, start animation. */
 function start() {
-    seqA = $('#seqA').val();
-    seqB = $('#seqB').val();
+    seqA = $('#seqA').val().toUpperCase();
+    seqB = $('#seqB').val().toUpperCase();
     matchBonus = parseFloat($('#match').val());
     mismatchPenalty = parseFloat($('#mismatch').val());
     gapPenalty = parseFloat($('#gap').val());
@@ -286,7 +307,7 @@ function start() {
     window.location.hash = '#visualization';
     initMatrix();
     updateVisualization();
-    setTimeout(step, 1); // TODO check time
+    setTimeout(step, 2000);
     return false;
 }
 
